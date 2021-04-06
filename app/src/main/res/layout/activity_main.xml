@@ -22,12 +22,13 @@
         android:id="@+id/btn_addPerson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="ADD NEW INSPIRING PERSON"
+        android:backgroundTint="@color/btnAddNewPerson"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@+id/csPeopleDisplay"
         app:layout_constraintTop_toBottomOf="@+id/csPeopleDisplay" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

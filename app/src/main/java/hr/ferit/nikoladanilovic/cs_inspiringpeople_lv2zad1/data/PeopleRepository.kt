@@ -24,7 +24,7 @@ object PeopleRepository {
         return people
     }
     fun getInspiringPerson(name: String): InspiringPerson = people.first { it -> it.name == name }
-    fun insert(note: InspiringPerson) = people.add(note)
-    fun delete(note: InspiringPerson) = people.remove(note)
+    fun insert(person: InspiringPerson) = people.add(person)
+    fun delete(person: InspiringPerson) = people.remove(person)
 
 }
