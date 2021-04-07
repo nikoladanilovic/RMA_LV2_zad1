@@ -10,13 +10,14 @@ object PeopleRepository {
     }
 
     private fun retrivePeople(): MutableList<InspiringPerson> {
-        return mutableListOf(InspiringPerson("Linus Torvalds", "28.12.1969.", "/","Founder of " +
+        return mutableListOf(InspiringPerson("Linus Torvalds", "28.12.1969.", "","Founder of " +
                 "Linux kernel used by Linux operating systems. He also helped with development of GIT",
-            "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg"),
-            InspiringPerson("Mark Zuckerberg", "14.05.1984.", "/", "Founder of massive social media company called Facebook.",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1200px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"),
-            InspiringPerson("Elon Musk", "28.01.1971.", "/", "Founder of PayPal, SpaceX, Tesla and many other companies.",
-            "https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg")
+            "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg", "Talk is cheap, show me the code."),
+            InspiringPerson("Mark Zuckerberg", "14.05.1984.", "", "Founder of massive social media company called Facebook.",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1200px-Mark_" +
+                    "Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg", "Move fast and brake things. Unless zou are breaking stuff, you are not moving fast enough."),
+            InspiringPerson("Elon Musk", "28.01.1971.", "", "Founder of PayPal, SpaceX, Tesla and many other companies.",
+            "https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg", "I think it is possible for ordinary people to choose to become extraordinary.")
         )
     }
 

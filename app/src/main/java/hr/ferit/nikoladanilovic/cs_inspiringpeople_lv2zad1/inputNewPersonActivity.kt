@@ -9,11 +9,9 @@ import hr.ferit.nikoladanilovic.cs_inspiringpeople_lv2zad1.databinding.ActivityI
 class inputNewPersonActivity : AppCompatActivity() {
 
     private lateinit var inputBinding : ActivityInputNewPersonBinding
-    //var newPerson = InspiringPerson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
         inputBinding = ActivityInputNewPersonBinding.inflate(layoutInflater)
         inputBinding.btnInputAddPerson.setOnClickListener { addNewPersonToRecyclerView() }
@@ -23,11 +21,14 @@ class inputNewPersonActivity : AppCompatActivity() {
 
     private fun addNewPersonToRecyclerView() {
 
+        // tu treba dodati inicijalizaciju za poznat citate
         val newPerson = InspiringPerson(inputBinding.etInputFullName.text.toString()
                 ,inputBinding.etInputDateOfBirth.text.toString()
                 ,inputBinding.etInputDateOfDeath.text.toString()
                 ,inputBinding.etInputPersonDesc.text.toString()
-                ,inputBinding.etInputImageURL.text.toString())
+                ,inputBinding.etInputImageURL.text.toString()
+                ,inputBinding.etInputQuote.text.toString())
+
 
         val intentToMain = Intent(this, MainActivity::class.java)
         intentToMain.putExtra("inputToMain", newPerson)

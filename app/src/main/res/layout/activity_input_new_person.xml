@@ -116,6 +116,27 @@
         android:layout_margin="@dimen/marginInputForm"
         />
 
+    <TextView
+        android:id="@+id/tvInputQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvInputQuoteText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etInputImageURL"
+        android:textSize="@dimen/textSizeInputForm"
+        android:layout_margin="@dimen/marginInputForm"
+        />
+
+    <EditText
+        android:id="@+id/etInputQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInputQuote"
+        android:textSize="@dimen/textSizeInputForm"
+        android:layout_margin="@dimen/marginInputForm"
+        />
+
     <Button
         android:id="@+id/btnInputAddPerson"
         android:layout_width="match_parent"
@@ -126,11 +147,6 @@
         android:textSize="@dimen/textSizeInputForm"
         android:layout_margin="@dimen/marginInputForm"
         />
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

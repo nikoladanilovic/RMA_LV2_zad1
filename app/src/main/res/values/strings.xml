@@ -11,4 +11,5 @@
     <string name="tvInputImageURL">Input inspiring persons image URL:</string>
     <string name="hintInputImageURL"><![CDATA[<url>.jpg , .png or some other format]]></string>
     <string name="btnInputAddPerson">ADD PERSON</string>
+    <string name="tvInputQuoteText">Input your favourite famous words of that person:</string>
 </resources>

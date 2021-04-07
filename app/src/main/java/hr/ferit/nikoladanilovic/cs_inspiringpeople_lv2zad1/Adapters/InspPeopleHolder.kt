@@ -1,6 +1,7 @@
 package hr.ferit.nikoladanilovic.cs_inspiringpeople_lv2zad1.Adapters
 
 import android.content.Context
+import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
@@ -21,9 +22,20 @@ class InspPeopleHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
             .placeholder(R.drawable.ic_launcher_background)
             .error(android.R.drawable.stat_notify_error)
             .into(itemBinding.imvInspPersonImg)
-        itemBinding.tvDates.text = person.dateOfBirth + person.dateOfDeath
+        itemBinding.tvDates.text = "Born on " + person.dateOfBirth + parseDateOfDeath(person.dateOfDeath)
         itemBinding.tvPersonDesc.text = person.description
 
-        itemBinding.imvInspPersonImg.setOnClickListener { Toast.makeText(itemView.context, "random citat", Toast.LENGTH_SHORT).show() }    }  //OVDJE nastavljam
+        itemBinding.imvInspPersonImg.setOnClickListener { Toast.makeText(itemView.context, person.quote, Toast.LENGTH_LONG).show() }
+    }
 
+    fun parseDateOfDeath(date : String) : String {
+        val parsedDate = ",  and died on " + date
+        if(TextUtils.isEmpty(date)){
+            return date
+        }
+        else
+        {
+            return parsedDate
+        }
+    }
 }

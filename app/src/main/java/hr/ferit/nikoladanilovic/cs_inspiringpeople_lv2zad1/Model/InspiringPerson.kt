@@ -7,5 +7,8 @@ data class InspiringPerson (
     val dateOfBirth : String,
     val dateOfDeath : String,
     val description : String,
-    val cover : String
+    val cover : String,
+    val quote : String
 ) : Serializable
+
+// tu treba dodati jos jedan dio klase -> poznati citati tih osoba

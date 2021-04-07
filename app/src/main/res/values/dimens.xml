@@ -8,6 +8,6 @@
     <dimen name="textSizeLarge">15sp</dimen>
     <dimen name="rviewHeight">670dp</dimen>
     <dimen name="rviewPadding">20dp</dimen>
-    <dimen name="textSizeInputForm">20sp</dimen>
+    <dimen name="textSizeInputForm">13sp</dimen>
     <dimen name="marginInputForm">7dp</dimen>
 </resources>
