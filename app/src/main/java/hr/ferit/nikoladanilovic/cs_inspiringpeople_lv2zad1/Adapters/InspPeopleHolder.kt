@@ -23,7 +23,7 @@ class InspPeopleHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
             .error(android.R.drawable.stat_notify_error)
             .into(itemBinding.imvInspPersonImg)
         itemBinding.tvDates.text = "Born on " + person.dateOfBirth + parseDateOfDeath(person.dateOfDeath)
-        itemBinding.tvPersonDesc.text = person.description
+        itemBinding.tvPersonDesc.text = person.name + ": " + person.description
 
         itemBinding.imvInspPersonImg.setOnClickListener { Toast.makeText(itemView.context, person.quote, Toast.LENGTH_LONG).show() }
     }
